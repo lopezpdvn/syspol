@@ -11,6 +11,9 @@ Separation](http://www.catb.org/esr/writings/taoup/html/ch01s06.html#id2877777).
 
 ### Mirrors
 
+All paths must be absolute, delimited by platform dependent character: `:` on
+POSIX, `;` on Windows.
+
 - `SYSPOL_EXTERNAL_MIRROR_BACKUP_DESTINATION_PATH`
 
 - `SYSPOL_EXTERNAL_MIRROR_BACKUP_SOURCE_PATH`
