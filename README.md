@@ -17,3 +17,36 @@ POSIX, `;` on Windows.
 - `SYSPOL_EXTERNAL_MIRROR_BACKUP_DESTINATION_PATH`
 
 - `SYSPOL_EXTERNAL_MIRROR_BACKUP_SOURCE_PATH`
+
+## Time based directory structure
+
+A *time base directory structure* with resolution *X* is a simple hierarchy for
+storing files in a predictable and manageable way. X can be one of *year*,
+*month*, *day*, *minute* or *second*. It's not necessary for the structure to
+have node directories for every time unit.
+
+### Examples
+
+The root of a time based directory structure with resolution `year`
+
+    $ tree -d .
+    .
+    ├── 2014
+    └── 2015
+
+    2 directories
+
+The root of a time based directory structure with resolution `month`
+
+    $ tree -d .
+    .
+    ├── 2014
+    │   ├── 01
+    │   └── 09
+    └── 2015
+        ├── 01
+        ├── 09
+        ├── 10
+        └── 11
+
+    8 directories
