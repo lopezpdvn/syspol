@@ -18,14 +18,14 @@ POSIX, `;` on Windows.
 
 - `SYSPOL_EXTERNAL_MIRROR_BACKUP_SOURCE_PATH`
 
-## Time based directory structure
+## Time based directory structure ######################################
 
 A *time base directory structure* with resolution *X* is a simple hierarchy for
 storing files in a predictable and manageable way. X can be one of *year*,
 *month*, *day*, *minute* or *second*. It's not necessary for the structure to
 have node directories for every time unit.
 
-### Examples
+### Examples ###########################################################
 
 The root of a time based directory structure with resolution `year`
 
@@ -50,3 +50,11 @@ The root of a time based directory structure with resolution `month`
         └── 11
 
     8 directories
+
+## Private Syspol
+
+Define/maintain a private Syspol project that extends the public one; if
+publishing a policy doesn’t create serious security risks, consider sharing it
+by integrating it into the public Syspol (see
+[this](http://pedroivanlopez.com/september-2015-in-review/#update-on-syspol)
+blog post).
