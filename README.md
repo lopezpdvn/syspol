@@ -55,6 +55,9 @@ The root of a time based directory structure with resolution `month`
 
 Define/maintain a private Syspol project that extends the public one; if
 publishing a policy doesn’t create serious security risks, consider sharing it
+<<<<<<< HEAD
 by integrating it into the public Syspol (see
 [this](http://pedroivanlopez.com/september-2015-in-review/#update-on-syspol)
 blog post).
+=======
+>>>>>>> 29994405512f353dd90709a2ab888bab97874c2d
