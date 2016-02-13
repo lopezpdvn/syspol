@@ -66,14 +66,14 @@ Each month directory stores the log files.
 
 ## Application locks
 
-Lock resources with files stored at `$CONFIGDIR/var/lock`.
+Lock resources with files stored at `$APPROOT/var/lock`.
 
 ### Single application instances
 
 Sometimes you need to be sure that at all times only one instance of an
-application or script is running. Let `CONFIGDIR` be the configdir path of an
-application named `xyz` that is currently running, then the lock files exists
-`$CONFIGDIR/var/lock/LCK..xyz`.
+application or script is running. Let `APPROOT` be the application root path of
+an application named `xyz` that is currently running, then the lock files
+exists `$APPROOT/var/lock/LCK..xyz`.
 
 When `xyz` starts, it checks if the lock file exists. If the lock exists then
 `xyz` fails and exits with an error code. Otherwise it creates the lock file
