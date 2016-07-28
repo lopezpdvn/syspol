@@ -86,8 +86,8 @@ and executes normally. When finished `xyz` deletes the lock file.
 The following environment variables hold filepaths of sound files used for
 alarms with severity of different types.
 
-- `SYSPOL_ALARM_CRITICAL_FP`
-- `SYSPOL_ALARM_ERROR_FP`
-- `SYSPOL_ALARM_WARNING_FP`
-- `SYSPOL_ALARM_INFO_FP`
-- `SYSPOL_ALARM_DEBUG_FP`
+- `SYSPOL_SOUND_ALARM_CRITICAL_FP`
+- `SYSPOL_SOUND_ALARM_ERROR_FP`
+- `SYSPOL_SOUND_ALARM_WARNING_FP`
+- `SYSPOL_SOUND_ALARM_INFO_FP`
+- `SYSPOL_SOUND_ALARM_DEBUG_FP`
