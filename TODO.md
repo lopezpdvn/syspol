@@ -2,6 +2,6 @@
 
 Document policies about
 
-- Configuration directories
+- Application roots
 - Logging
 - Locking

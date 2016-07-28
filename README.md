@@ -1,5 +1,7 @@
 # syspol - System Policy ###############################################
 
+by [Pedro Ivan Lopez](http://pedroivanlopez.com "Pedro Ivan Lopez's website")
+
 System policy. Inspired by the [Rule of
 Separation](http://www.catb.org/esr/writings/taoup/html/ch01s06.html#id2877777).
 
@@ -78,3 +80,14 @@ exists `$APPROOT/var/lock/LCK..xyz`.
 When `xyz` starts, it checks if the lock file exists. If the lock exists then
 `xyz` fails and exits with an error code. Otherwise it creates the lock file
 and executes normally. When finished `xyz` deletes the lock file.
+
+## Sound alarms
+
+The following environment variables hold filepaths of sound files used for
+alarms with severity of different types.
+
+- `SYSPOL_ALARM_CRITICAL_FP`
+- `SYSPOL_ALARM_ERROR_FP`
+- `SYSPOL_ALARM_WARNING_FP`
+- `SYSPOL_ALARM_INFO_FP`
+- `SYSPOL_ALARM_DEBUG_FP`
